@@ -1,5 +1,5 @@
 # Below is an R function to cache the potentially time-consuming computation of an inverse.
-# Then, if the contents of a vector are not changed, the inverse may be looked up in stead of recomputed.
+# Then, if the contents of a vector have not changed, the inverse may be looked up in stead of recomputed.
 
 ## makeCacheMatrix does exactly what the name implies: it makes a special object that can cache its inverse.
 makeCacheMatrix <- function(x = matrix()) {
